@@ -1,0 +1,18 @@
+
+
+def get_av(filename):
+	average = 0
+	count = 0
+	total = 0
+	with open(filename,"r") as myfile:
+		for line in myfile:
+			data = line.split(",   ")
+			time = int(data[2])
+			count = count + 1
+			total = total + time
+	average = total/count
+	return average
+
+av = get_av("Accuracy.txt")
+
+print av

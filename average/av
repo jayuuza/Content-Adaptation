@@ -1,0 +1,25 @@
+human = 0
+bad = 0
+good = 0
+
+def get_av(filename):
+	average = 0
+	count = 0
+	total = 0
+	with open(filename,"r") as myfile:
+		for line in myfile:
+			data = line.split(",")
+			s1 = data[0].split(" ")
+			score = int(s1[5])
+			count = count + 1
+			total = total + score
+	average = total/count
+	return average
+
+human = get_av("human.txt")
+bad = get_av("bad.txt")
+good = get_av("good.txt")
+
+print human
+print bad
+print good

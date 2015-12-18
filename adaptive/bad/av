@@ -1,0 +1,22 @@
+def get_av(filename):
+	m = []
+	with open(filename,"r") as myfile:
+		for line in myfile:
+			data = line.split(", ")
+			m.append(int(data[3]))
+	return m
+
+av = get_av("GameChanges.txt")
+
+total = 0
+average = 0
+n = []
+for i in range(len(av)):
+	total = total + av[i]
+	average = total/(i+1)
+	n.append(average)
+
+with open("Ave.txt","a") as myfile:
+	for j in range(len(n)):
+		ave = str(n[j]) + "\n"
+		myfile.write(ave)
