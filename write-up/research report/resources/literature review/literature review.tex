@@ -1,0 +1,109 @@
+\documentclass[11pt]{article}
+\usepackage{witsa4}
+\usepackage{times}
+
+\usepackage{url}
+\usepackage{natbib} \input{natbib-add}
+\bibliographystyle{named-wits}
+\bibpunct{[}{]}{;}{a}{}{,}  
+\usepackage{graphicx}
+
+\title{Interface adaptation by content analysis:\\
+Literature Review}
+
+\author{Jonathan Wasson 463117}
+
+\begin{document}
+\nocite{*}
+\maketitle
+
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{WITS-logo.jpg}
+\end{center}
+
+\clearpage
+\tableofcontents
+
+
+\clearpage
+\section{Introduction}
+
+As computers begin to encroach on every aspect of everyday life. It has become more and more apparent that the diversity of people using computers is also increasing. This dependence on technology permeates most modern businesses and households. From doctors to store clerks, all these people will have to make use of a computer at some point in their everyday lives \citep{beaudry2005understanding}. Take doctors for example; Doctors must make use of software that can keep track of patient records as well as machinery that performs complicated procedures on patients. New technology has been developed that allows surgeons to operate over long distances through the use of the internet and augmented reality. Allowing countries without the necessary skilled labour to import it from overseas almost instantaneously in cases of emergency.
+\vspace{6.0 mm}
+
+However, this progress has left a few behind. Older people, the disabled and often those who are not technologically savvy are struggling to adapt to the rigours of modern life. Nowadays, we can see old people who would have once refused to use things such as email or phones are now being forced to use these services and devices on a daily basis. Disabled people \citep{gajos2008improving} are also being forced to adapt to this change since most devices are designed in a way that is not suitable for their use. Indeed, this ever increasing reliance on technology has forced people to adapt to modern times and it can be said that the modern worker must be able to use a computer or face the risk of unemployment.
+\vspace{6.0 mm}
+
+
+To justify this as a research topic we must analyse all available media that provides insight into this topic. The following paper will discuss material relevant to this question and then use it to justify this as a research topic.
+
+\clearpage
+\section{Literature Review}
+\subsection{Justification}
+
+As shown in the introduction the need for this research was justified by saying that more people are using technology on a daily basis but not all of these people are capable of using technology efficiently. How then can this issue be tackled to help these people improve their performance when using computers? It was shown in "Understanding user responses to information technology: A coping model of user adaptation." \citep{beaudry2005understanding} how users of varying technological ability responded to a new technology being introduced to their work environment. The paper found that although peoples reactions and abilities to adapt vary widely for each individual, it is possible for these adaptation 'Strategies' to be grouped. The research concluded by observing actual people in real life scenarios that there are four broad adaptation strategies that cover all individuals coping mechanisms to new technology. This is highly important since it shows that if it is possible to label an individuals coping mechanism and behaviour then it is possible to develop a method to help any individual cope with new technology.
+\vspace{6.0 mm}
+\subsection{Implementation}
+How though can we implement this? How is it possible to create something that will automatically fit a person to effectively minimise the time they take to cope with new technology? There are several papers that have provided a solution to this problem. They propose that to optimise a users performance, one must simply adapt the interface of said program to perfectly suit the user \citep{lavie2010benefits}. Whether or not this is applicable is another problem.
+"Benefits and costs of adaptive user interfaces" by Lavie Talia and Meyer Joachim gives an outline of an experiment where this is explored. Through the use of an experiment involving people of different ages operating vehicles with different interfaces and then measuring their response times.
+They came to the conclusion that adaptive interfaces are beneficial in situations where computation time is not an issue. They also came to the conclusion that older people's performances improved drastically when using adaptive interfaces but younger people's performance either remained unchanged or dropped drastically. In these cases the interfaces actually impeded user performance.
+\vspace{6.0 mm}
+
+This shows that it is possible to create an adaptive interface which can improve user performance but it was noted in \citep{lavie2010benefits} that further research was required to explore and expound this topic. Which comes to my research hypothesis.
+
+\begin{center}
+\textbf{
+Hypothesis: The content and interface of a computer program can be updated or changed to automatically improve the users performance.}
+\end{center}
+
+How then can an adaptive user interface be generated? There are several methods to accomplish this. The method that has the lowest apparent computation time and most apparent usefulness makes use of what is called a Markov decision process \citep{barto1998reinforcement}. "Reinforcement learning: An introduction"  \citep{barto1998reinforcement} explains in detail the applications of a field of computer science called reinforcement learning. Reinforcement learning is a machine learning process whereby the environment learns from the users interaction with it. The paper also covers a very broad range of applications, seeing use in topics such as genetic algorithms, psychology, control engineering etc. However there are several challenges with reinforcement learning. The major challenge is the trade-off between what is referred to as exploitation and exploration. To achieve a high reward, reinforcement learning must exploit as many decisions it has observed in the past. However, to obtain these decisions it must explore as much as possible which might lead to massive training data. The paper then goes on to explain that there is no easy way to pick an optimal route between exploitation and exploration.
+\vspace{6.0 mm}
+
+
+A Markov decision process is a mathematical framework that can easily represent decision making when some decision may be random. Its most common representation is that of a directed graph where states and actions are nodes and the connections between these are probabilities of certain events occuring. Through the use of an MDP, we can easily create an iterative method that updates states and actions so that an optimal policy is possible. In conclusion the paper shows that reinforcement learning can generate agents  whose performance improves over time through computational effort.\citep{white1991survey}
+\vspace{6.0 mm}
+
+These MDP's have been used in \citep{ramamoorthylatent} and \citep{rosman2014user} to generate interfaces. The MDP's were represented using the list data structure with look-up times increased using hash tables. In \citep{andrade2005challenge} a representation of a basic MDP is shown. They used a list structure with each state mapping to several actions as well. Using this, the program can measure user's actions and then store them over several 'games'. This data can be averaged to show the behaviour of the user. Knowing which actions have better results will allow us to tweak the user interface so that the user picks better action more often.
+\vspace{6.0 mm}
+
+So it has now been shown that adaptive interfaces can indeed be made and that through the use of an MDP we can generate a user profile for each user. All that needs to be shown is how to actually create and decide on interfaces for users. The method for doing this quite clear cut \citep{dessart2011showing}. All that must be done to adapt the interface is to create a transition function which is done as follows:
+\begin{itemize}
+\item Find what action has been changed by the user.
+\item Find which element of the user interface is affected
+\item Perform one of the following operations on the element: Resize, Relocate, Image transformation, Widget transformation, Widget splitting.
+\end{itemize}
+\vspace{6.0 mm}
+There is one more thing that needs to be shown. Once a user profile is selected and an appropriate interface selected, the user is then given the newer interface to use. After this the program will hone in on an optimal interface till the user is always performing his/her optimal actions \citep{dessart2011showing} \citep{andrade2005challenge}.
+
+\clearpage
+
+
+\section{Further Study}
+
+An adaptive interface isn't exactly easy to implement due to computation constraints. Further study can be done in creating adaptive interface algorithms more efficiently. A computer game usually requires a large amount of computation power. This has large implications for the tech industry since several devices require a calibration stage before usage. An adaptive interface can be used to circumnavigate this and instead perform the 'calibration' on the fly. Take for example the computer game system called the xbox. Users upon first starting the console up must perform several basic adjustments to alter the interface to suit themselves. Most users find this highly annoying and often write complaints on thiss very issue to Microsoft as a result.
+\vspace{6.0 mm}
+
+Overall, this research has never been fully explored and has only been implemented a few times in small contained experiments such as those in \citep{andrade2005challenge}, \citep{ramamoorthylatent} and \citep{rosman2014user}. Since this approach does not simply have to be used in the generation of user interface but can be used to map user preferences and behaviours. Due to this fact, there is a lot of room for improvement and exploration. Thought has been given to use this approach in the generation of RSS feeds on the internet. Even advertisements can use this method to create user profiles and then a mapping from one advert to another. \\
+This research can, quite literally, be used in almost every aspect of computer systems known to man since these computer systems have several different users with varying abilities. This research will explore and tackle this in a way that can be implemented anywhere.
+
+
+\clearpage
+\section{Conclusion}
+
+Therefore it has been proposed that an interface can be created which will increase the users performance. Which can be summarised as follows: \\
+
+\begin{center}
+\textbf{
+Hypothesis: The content and interface of a computer program can be updated or changed to automatically improve the users performance.}
+\end{center}
+
+The commercial and societal impact of this research has been shown to have merit by showing that several companies would benefit directly from this research. Lack of research in this area of computer science indicates that more research is required to further this field. Many new and novel ways have also been suggested to generate adaptive interfaces but have not been fully explored.
+
+
+
+
+\clearpage
+\bibliography{references}
+
+
+\end{document}

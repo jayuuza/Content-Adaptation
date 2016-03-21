@@ -1,0 +1,73 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Andrade \bgroup \em et al.\egroup
+  }{2005}]{andrade2005challenge}
+Gustavo Andrade, Geber Ramalho, Hugo Santana, and Vincent Corruble.
+\newblock Challenge-sensitive action selection: an application to game
+  balancing.
+\newblock In {\em Intelligent Agent Technology, IEEE/WIC/ACM International
+  Conference on}, pages 194--200. IEEE, 2005.
+
+
+\bibitem[\protect\citeauthoryear{Beaudry and
+  Pinsonneault}{2005}]{beaudry2005understanding}
+Anne Beaudry and Alain Pinsonneault.
+\newblock Understanding user responses to information technology: A coping
+  model of user adaptation.
+\newblock {\em Mis Quarterly}, pages 493--524, 2005.
+
+
+\bibitem[\protect\citeauthoryear{Dessart \bgroup \em et al.\egroup
+  }{2011}]{dessart2011showing}
+Charles-Eric Dessart, Vivian Genaro~Motti, and Jean Vanderdonckt.
+\newblock Showing user interface adaptivity by animated transitions.
+\newblock In {\em Proceedings of the 3rd ACM SIGCHI symposium on Engineering
+  interactive computing systems}, pages 95--104. ACM, 2011.
+
+
+\bibitem[\protect\citeauthoryear{Gajos \bgroup \em et al.\egroup
+  }{2008}]{gajos2008improving}
+Krzysztof~Z Gajos, Jacob~O Wobbrock, and Daniel~S Weld.
+\newblock Improving the performance of motor-impaired users with
+  automatically-generated, ability-based interfaces.
+\newblock In {\em Proceedings of the SIGCHI conference on Human Factors in
+  Computing Systems}, pages 1257--1266. ACM, 2008.
+
+
+\bibitem[\protect\citeauthoryear{Lavie and Meyer}{2010}]{lavie2010benefits}
+Talia Lavie and Joachim Meyer.
+\newblock Benefits and costs of adaptive user interfaces.
+\newblock {\em International Journal of Human-Computer Studies},
+  68(8):508--524, 2010.
+
+
+\bibitem[\protect\citeauthoryear{Ramamoorthy \bgroup \em et al.\egroup
+  }{2013}]{ramamoorthy2013latent}
+Subramanian Ramamoorthy, MM~Hassan Mahmud, Benjamin Rosman, and Pushmeet Kohli.
+\newblock Latent-variable mdp models for adapting the interaction environment
+  of diverse users.
+\newblock 2013.
+
+
+\bibitem[\protect\citeauthoryear{Rosman \bgroup \em et al.\egroup
+  }{2014}]{rosman2014user}
+Benjamin Rosman, Subramanian Ramamoorthy, MM~Hassan Mahmud, and Pushmeet Kohli.
+\newblock On user behaviour adaptation under interface change.
+\newblock 2014.
+
+
+\bibitem[\protect\citeauthoryear{Sutton and
+  Barto}{1998}]{sutton1998introduction}
+Richard~S Sutton and Andrew~G Barto.
+\newblock {\em Introduction to reinforcement learning}.
+\newblock MIT Press, 1998.
+
+
+\bibitem[\protect\citeauthoryear{White~III}{1991}]{white1991survey}
+Chelsea~C White~III.
+\newblock A survey of solution techniques for the partially observed markov
+  decision process.
+\newblock {\em Annals of Operations Research}, 32(1):215--230, 1991.
+
+
+\end{thebibliography}

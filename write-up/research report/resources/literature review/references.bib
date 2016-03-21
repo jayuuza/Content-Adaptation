@@ -1,0 +1,222 @@
+@inproceedings{andrade2005challenge,
+  title={Challenge-sensitive action selection: an application to game balancing},
+  author={Andrade, Gustavo and Ramalho, Geber and Santana, Hugo and Corruble, Vincent},
+  booktitle={Intelligent Agent Technology, IEEE/WIC/ACM International Conference on},
+  pages={194--200},
+  year={2005},
+  organization={IEEE},
+  ANNOTE = {\textbf{Aim:} Through use of reinforcement learning techniques, this paper presents a method to create intelligent agents that can adjust game difficulty.
+\\
+\textbf{Style:} Conference paper
+\\
+\textbf{Cross References:} This paper is used extensively in [Rosman et al. 2014] and in [Ramamoorthy et al.] to help explain and identify how to create an adaptive agent.
+\\
+\textbf{Keywords:} Adaptation, Intelligent agent, Adaptivity, Dynamic Skill Adjustment
+\\
+\textbf{Summary:}    This paper deals with providing a dynamic skill adjustment feature to programs. Specifically for users of varying skills and capacity for adapting. In particular the paper focuses on providing this dynamic skill adjustment in computer games. \\
+A method is laid out and tested, whereby an agent is created and tested versus various opponents.  The steps involved to accomplish this are as follows:
+
+\begin{itemize}
+\item An agent is created which will learn from the human opponent in the specific game being tested.
+\item The agent creates a table of available moves for each state. Over successive generations; based on the success of these moves; the action set is updated. Where the decisions learned by unskilled players are added along with those of the skilled players. All this means is that the agent can pick actions based on skill level.
+\item Once trained the agent will always start at a middle skill level and based on the performance of the user it will slowly change and adapt the actions chosen to meet the player at his or her appropriate level.
+\end{itemize}
+
+In the paper, this method is used to create 3 difficulty levels for the game 'Knock 'Em' which is basically a simulated boxing game where players can move around a 'ring' using the WASD keys, they can jump using the space bar and aim the camera using the mouse. Points in this game are awarded whenever a successful punch is landed on the opponent. \\
+
+To test the performance of this agent, three seperate agents of varying skill levels were created. The adaptive agent was then tested over 30 games versus each of these other agents. It was found that the adaptive agent honed in to match each specific agent's performance, eventually reaching a state of fluctuation where average score remained around the 50/50 win/lose ratio. Effectively showing that an agent can be created that adapts to the skill level of the user.}
+}
+
+@article{ramamoorthylatent,
+  title={Latent-Variable MDP Models for Adapting the Interaction Environment of Diverse Users},
+  author={Ramamoorthy, Subramanian and Mahmud, MM Hassan and Rosman, Benjamin and Kohli, Pushmeet},
+  ANNOTE = {\textbf{Aim:} To create a personalized inteface such that it adapts to the users input over time to form an optimal performance enhancing interface.
+\\
+\textbf{Style:} Experimental
+\\
+\textbf{Cross-references:} The following papers were consulted to aid in the production of this paper: [Gajos et al. 2008],[Dessart et al. 2011],[Beaudry and Pinsonneault 2005] and [Andrade et al. 2005].
+\\
+
+\textbf{Summary:} The paper explained how to select an agent type to use when generating an interface. A latent variable Markov Decision Process was chosen as the transition and reward of actions are included in the formulation of an MDP. An experiment was then formulated to illustrate the use of a latent variable MDP.
+The experiment is as follows:
+\begin{itemize}
+\item A 20x20 grid was created to represent a game world. The goal of this game is for the users to move a dot from a fixed start to a fixed goal.
+\item Different contollers are presented to each user which then represent skill level.
+\item At each step the user chooses a firection to move in. The algorithm then makes a prediction of where the user will move through Baysian probability. 
+\item Performance was then measured for users of varying skill levels and control structures. This one done for 100 episodes each.
+\end{itemize}
+
+The paper concluded that it had indeed used a method to create a Markov decision process that represents an action-set selection.
+
+
+
+}
+
+
+
+}
+
+@article{rosman2014user,
+  title={On User Behaviour Adaptation Under Interface Change},
+  author={Rosman, Benjamin and Ramamoorthy, Subramanian and Mahmud, MM Hassan and Kohli, Pushmeet},
+  year={2014},
+  ANNOTE = {\textbf{Aim:}  The following problem is presented in this paper: Given an action set/interface, users eventually learn policies that will make them efficient in the usage of that interface. What happens when the interface is changed or a new one is introduced? Experiments are devised to explore this. This paper aims to create interface adaptation algorithms that are capable of taking the users personality traits into account.
+		\\
+		\textbf{Style/ Type:} Conference paper
+		\\
+		 \textbf{Cross References:}The following papers were consulted to aid in the production of this paper: [Lavie and Meyer 2010],[Gajos et al. 2008],[Dessart et al. 2011],[Beaudry and Pinsonneault 2005] and [Andrade et al. 2005].
+		\\
+\textbf{Keywords:} Input and Interaction technologies, usability research, user interface design and usability testing
+		 \textbf{Summary:} Five experiments are implemented in this paper. All of which relate to the game of moving a ball through a field of circular obstacles to a fixed goal. Users actions and time taken are recorded for each game. The experiments were conducted for a set of tasks with a specific interface then for a different interface. In total there are 3 interfaces. Each of the five experiments relates to a different ordering and combination of these interfaces.\\
+The purpose of this is to measure users response times for each combination to determine whether or not a change of interface alters performance. The obvious thought is that changing interface will lower performance as the user must now adapt to a newer different interface that he/she is not used to. However the experiments results indicate that this is not entirely true. The experiments showed that performance in some cases decreased and in some cases increased.\\
+Further discussion was then held on how to mitigate these affects. With the conclusion being reached that migratory or intermittent interfaces can be used to give the user a more gradual change between interfaces allowing for time to adapt.
+
+
+}
+}
+
+@article{beaudry2005understanding,
+  title={Understanding user responses to information technology: A coping model of user adaptation},
+  author={Beaudry, Anne and Pinsonneault, Alain},
+  journal={Mis Quarterly},
+  pages={493--524},
+  year={2005},
+  publisher={JSTOR},
+  ANNOTE = 
+{\textbf{Aim:} This paper explores and explains thoroughly the behavioural and cognitive efforts that users perform to handle and cope with technological events that occur in their work environment as well as explores the psychlogical impact of these events.
+\\
+
+\textbf{Style:} Theoretical
+\\
+
+\textbf{Summary:} The paper posits that people use two processes to cope with an event. Firstly they assess the problem's nature and formulate how this event affects themselves. They then perform the relevant actions to deal with the problem. These two processes can then be broken up into several subcategories such as emotion-focused coping and problem-focused coping. \\
+It then further explores the actions humans perform to deal with these problems. The actions are laid out as follows:
+\begin{itemize}
+\item Benefits maximising strategy: Maximises benefits at the detriment or risk
+\item Benefits satisficing strategy: Minimises risk but keeps benefits at a satisfactory level
+\item Disturbance handling strategy: Lowers risk when high control is available
+\item Self-Preservation strategy: Lowers risk as much as possible
+\end{itemize}
+To show the affects of all these human cognitive processes, a case study was presented wherein a new computer system was introduced to two banks. The banks remain annonymous and are simply refered to as Bank A and Bank B. The new system is called Link, very little detail is given on this system. It is simply stated to be a large change from each banks previous systems. Statements and reviews of this system are taken from all the banks employees. This data is then thoroughly examined and specific instances of the above coping mechanisms are pointed out.
+ }
+}
+
+
+
+
+@inproceedings{dessart2011showing,
+  title={Showing user interface adaptivity by animated transitions},
+  author={Dessart, Charles-Eric and Genaro Motti, Vivian and Vanderdonckt, Jean},
+  booktitle={Proceedings of the 3rd ACM SIGCHI symposium on Engineering interactive computing systems},
+  pages={95--104},
+  year={2011},
+  organization={ACM},
+  ANNOTE = {\textbf{Aim:} This paper lays out the method used to make transition functions and reinforces the reasons for their usage.
+\\
+\textbf{Style:} Theoretical
+\\
+\textbf{Cross-references:} This paper is used in [Rosman et al. 2014] and in [Ramamoorthy et al.] 
+to help explain the method used to create transition functions and will be used extensively in my research to achieve the same. These will be used to create a new user interface at each iteration.
+\\
+\textbf{Keywords:} Adaptation, adaptivity, transition operation, selection mechanism, transition operation, visual transition. 
+\\
+\textbf{Summary:} The method used to create a transition function is the crux of this paper and as such I will simply summarise this method in point form below:
+\begin{itemize}
+\item Find what action has been changed by the user.
+\item Find which element of the user interface is affected
+\item Perform one of the following operations on the element: Resize, Relocate, Image transformation, Widget transformation, Widget splitting.
+
+\end{itemize}
+
+ }
+}
+
+
+
+
+
+
+@inproceedings{gajos2008improving,
+  title={Improving the performance of motor-impaired users with automatically-generated, ability-based interfaces},
+  author={Gajos, Krzysztof Z and Wobbrock, Jacob O and Weld, Daniel S},
+  booktitle={Proceedings of the SIGCHI conference on Human Factors in Computing Systems},
+  pages={1257--1266},
+  year={2008},
+  organization={ACM},
+  ANNOTE = {\textbf{Aim:} The paper evaluates two methods to generate user interfaces that specifically cater to a disabled person. 
+\\
+\textbf{Style:} Experimental
+\\
+\textbf{Cross-references:} This paper illustrates the usefulness of my research topic and gives a real world applicable use for it.
+\\
+\textbf{Keywords:} Ability-based user interfaces, Adaptability, Motor impairments.
+\\
+\textbf{Summary:} A way to automatically generate a user interface to perfectly cater the needs of the specific user is presented. In this paper the example of disabled people is specifically explored. The real world applicabilty of this specific scenario in content adaptation is why this paper has been explored (i.e. To validate the applicability of my research).\\
+Several participants with a range of disabilities were chosen to take part in developing this software. They were each asked to pick a device they would like to use; objects such as a mouse, tracking ball, keyboard etc. A few tasks were then presented to them for completion. Each task mapped a specific motor ability; things such as dragging, pointing, list selection and multiple clicking. All of which are basic functions able bodied people can do without thought. The participants were then asked to alter the devices settings to a level that most improved their performance and that they were most comfortable with.\\
+User profiles for each specific device and disability were created. An algorithm that uses reinforcement learning was then made to generate interfaces that were most suitable for each user profile. Software was then created using this data that would then generate a user interface best suited to each user based on the training data used to generate each individual user profile.\\
+Testing was then done for the software using people with similar disabilities. The paper then concluded that motor impaired participants overall average performance improved by 26.4 percent. Which showed that automatic generation of user interfaces is feasible and that these interfaces improve performance and the quality of computer interaction.
+
+}
+}
+
+
+
+@article{white1991survey,
+  title={A survey of solution techniques for the partially observed Markov decision process},
+  author={White III, Chelsea C},
+  journal={Annals of Operations Research},
+  volume={32},
+  number={1},
+  pages={215--230},
+  year={1991},
+  publisher={Springer},
+  ANNOTE = {
+		\textbf{Aim:} This paper explains what a Markov decision process is and how to implement it in a virtual environment.
+		\\
+		\textbf{Style:} Theoretical
+		\\
+		 \textbf{Summary:} A Markov decision process is a mathematical framework that can easily represent decision making when some decision may be random. Its most common representation is that of a directed graph where states and actions are nodes and the connections between these are probabilities of certain events occuring. One of the best ways to represent this in code is to use a linked list with states and the respective actions weights listed. It then further explores and expands on the intracacies of achieving this.
+
+		}
+}
+
+@book{barto1998reinforcement,
+  title={Reinforcement learning: An introduction},
+  author={Barto, Andrew G},
+  year={1998},
+  publisher={MIT press},
+  ANNOTE = {\textbf{Aim:} This paper explores the concept of reinforcement learning and explains it thoroughly.
+		\\
+		\textbf{Style:} Explanatory/ Theoretical
+		\\
+		 \textbf{Summary:} Reinforcement learning is a machine learning process whereby the environment learns from the users interaction with it. It also covers a very broad range of applications, seeing use in topics such as genetic algorithms, psychology, control engineering etc. However there are several challenges with reinforcement learning. The major challenge is the tradeoff between what is refered to as exploitation and exploration. To achieve a high reward, reinforcement learning must exploit as many decisions it has observed in the past. However, to obtain these decisions it must explore as much as possible which might lead to massive training data. The paper then goes on to explain that there is no easy way to pick an optimal route between exploitation and exploration.\\
+Markov decision processes theoretical nature and definition is then covered extensively. A Markov decision process is a mathematical framework that can easily represent decision making when some decision may be random. Its most common representation is that of a directed graph where states and actions are nodes and the connections between these are probabilities of certain events occuring. Through the use of an MDP, we can easily create an iterative method that updates states and actions so that an optimal policy is possible.\\
+In conclusion the paper shows that reinforcement learning can generate agents  whose performance improves over time through computational effort.
+
+
+
+}
+
+
+
+}
+@article{lavie2010benefits,
+  title={Benefits and costs of adaptive user interfaces},
+  author={Lavie, Talia and Meyer, Joachim},
+  journal={International Journal of Human-Computer Studies},
+  volume={68},
+  number={8},
+  pages={508--524},
+  year={2010},
+  publisher={Elsevier},
+  ANNOTE = {\textbf{Aim:} Due to the cost of adaptive processes, this paper explores the benefits and costs of an adaptive process to establish whether or not it is viable.
+		\\
+		\textbf{Style:} Conference paper
+		\\
+		 \textbf{Summary:} An explanation of Adaptive user interfaces or AUI's is given. With a list of situations given where this useful. The example of an interface where the menu can be split into smallers submenus is given. A hypothesis is made saying the following: "(1) In routine situations, the fully adaptive system will be more beneficial... (2) In non-routine situations, the manual and more routine situations will be more beneficial ..." which seems to point out that in an unpredictable scenario it would be better not to use an AUI due to the time taken to compute the system whereas the opposite would be true for a predictable scenario since computation time won't be an issue. \\
+To test this hypothesis an experiment is laid out in the paper whereby several people are asked to drive cars on a test track. The cars have varying degrees of adaptivity in their controls ranging from fully manual to fully adaptive. Where fully adaptive would entail the car being able to predict certain actions based on the users input etc. Performance was measured in the time taken to respond to obstacles.\\
+The hypothesis was then validated later on in the paper when people who were driving manual cars were better able to avoid random interruptions. Through successive iterations the developers then added the feature to adaptive cars to switch to manual in the event of a crisis. Performance increased drastically after this addition.\\
+The tests were then performed purely on a group of older participants. The results differed completely, in that the older people had higher performances when using adaptive interfaces in non-routine situations, the exact opposite of what was shown above. The paper concludes that the adaptive interfaces were useful in certain scenarios and required tweaking in others. It was noted that this conclusion was entirely dependent on this specific research study and that further research will be required to explore this topic further.
+
+}
+}

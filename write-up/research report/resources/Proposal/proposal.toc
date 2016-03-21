@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Background and Related Work}{2}
+\contentsline {subsection}{\numberline {2.1}Introduction}{2}
+\contentsline {subsection}{\numberline {2.2}Significance}{2}
+\contentsline {subsubsection}{\numberline {2.2.1}Uses of Adaptive Content}{2}
+\contentsline {subsubsection}{\numberline {2.2.2}Viability of Adaptive Content}{4}
+\contentsline {subsection}{\numberline {2.3}Markov Decision Processes}{5}
+\contentsline {subsection}{\numberline {2.4}Conclusion}{8}
+\contentsline {section}{\numberline {3}Research Method}{9}
+\contentsline {subsection}{\numberline {3.1}Introduction}{9}
+\contentsline {subsection}{\numberline {3.2}Motivation and Hypothesis}{9}
+\contentsline {subsection}{\numberline {3.3}Overview of Method}{10}
+\contentsline {subsubsection}{\numberline {3.3.1}Programming Languages}{10}
+\contentsline {subsubsection}{\numberline {3.3.2}Phase 1: Game Design}{10}
+\contentsline {subsubsection}{\numberline {3.3.3}Phase 2: Testing}{12}
+\contentsline {subsubsection}{\numberline {3.3.4}Phase 3: Algorithm Design}{12}
+\contentsline {subsubsection}{\numberline {3.3.5}Phase 4: Comparative Analysis}{13}
+\contentsline {subsubsection}{\numberline {3.3.6}Time Management}{14}
+\contentsline {subsection}{\numberline {3.4}Conclusion}{14}
+\contentsline {section}{\numberline {4}Results}{15}
+\contentsline {subsection}{\numberline {4.1}Introduction}{15}
+\contentsline {subsection}{\numberline {4.2}Expected Results}{15}
+\contentsline {subsection}{\numberline {4.3}Future Work}{15}
+\contentsline {section}{\numberline {5}Conclusion}{16}
+\contentsline {section}{\numberline {6}Bibliography}{17}
